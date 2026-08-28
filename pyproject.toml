@@ -17,3 +17,11 @@ build-backend = "setuptools.build_meta"
 
 [tool.pdm]
 distribution = true
+
+[tool.pdm.scripts]
+start = { cmd = "python -m rpa_excel_ui_automation.app", help = "Ejecuta el flujo RPA completo (abrir origen y guardar como)" }
+
+[dependency-groups]
+dev = [
+    "openpyxl>=3.1.5",
+]

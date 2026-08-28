@@ -32,6 +32,10 @@ MANIFEST
 *.manifest
 *.spec
 
+# RPA: artefactos generados en ejecución
+.data/output/
+@AutomationLog.txt
+
 # Installer logs
 pip-log.txt
 pip-delete-this-directory.txt
