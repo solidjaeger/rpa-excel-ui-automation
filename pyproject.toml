@@ -5,7 +5,7 @@ description = "Default template for PDM package"
 authors = [
     {name = "merzamac", email = "100945727+merzamac@users.noreply.github.com"},
 ]
-dependencies = ["uiautomation>=2.0.29"]
+dependencies = ["uiautomation>=2.0.29", "loguru>=0.7.3"]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
@@ -24,4 +24,5 @@ start = { cmd = "python -m rpa_excel_ui_automation.app", help = "Ejecuta el fluj
 [dependency-groups]
 dev = [
     "openpyxl>=3.1.5",
+    "pytest>=9.1.1",
 ]
